@@ -68,13 +68,13 @@ def main():
         
         opcion = input("Elige una opción: ")
         
-        if opcion == 1:
+        if opcion == '1':
             CrearTrabajador()
-        elif opcion == 2:
+        elif opcion == '2':
             ListarTrabajadores()
-        elif opcion == 3:
+        elif opcion == '3':
             ImprimirPlanilla()
-        elif opcion == 4:
+        elif opcion == '4':
             print("Chaolin flojin, programa cerrao.")
             break
         else:
