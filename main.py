@@ -25,3 +25,14 @@ def registrar_trabajador():
     }
     empleados.append(empleado)
     print("Trabajador registrado exitosamente.\n")
+
+def listar_trabajadores():
+    print("\nLista de Trabajadores:")
+    for empleado in empleados:
+        print("Nombre:", empleado["Nombre"], empleado["Apellido"])
+        print("Cargo:", empleado["Cargo"])
+        print("Sueldo Bruto:", empleado["Sueldo Bruto"])
+        print("Desc. Salud:", empleado["Desc. Salud"])
+        print("Desc. AFP:", empleado["Desc. AFP"])
+        print("Líquido a pagar:", empleado["Líquido a pagar"])
+        print("")
