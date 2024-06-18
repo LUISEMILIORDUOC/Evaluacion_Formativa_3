@@ -18,6 +18,7 @@ def CrearTrabajador():
     trabajador = {
         'nombre': nombre,
         'apellido': apellido,
+        'cargo': cargo,
         'sueldoBruto': sueldoBruto,
         'descSalud': descSalud,
         'descAFP': descAFP,
