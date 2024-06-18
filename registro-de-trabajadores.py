@@ -9,14 +9,14 @@ def registrar_trabajador():
     sueldo_bruto =int(input("Sueldo Bruto: "))
     desc_fonasa= sueldo_bruto * 0.07
     desc_afp = sueldo_bruto * 0.1
-    liquido_pagar = sueldo_bruto - desc_salud - desc_afp
+    liquido_pagar = sueldo_bruto - desc_fonasa - desc_afp
 #diccionario de plantilla de empleados
     empleado = {
         "Nombre": nombre,
         "Apellido": apellido,
         "Cargo": cargo,
         "Sueldo Bruto": sueldo_bruto,
-        "Desc. Salud": desc_salud,
+        "Desc. Salud": desc_fonasa,
         "Desc. AFP": desc_afp,
         "Líquido a pagar": liquido_pagar
     }
