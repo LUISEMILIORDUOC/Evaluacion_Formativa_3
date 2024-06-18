@@ -42,7 +42,7 @@ def ImprimirPlanilla():
     if seleccion == 'todos':
         trabajadores_filtrados = trabajadores
         nombre_archivo = "planilla_todos.csv"
-    elif seleccion in 'cargos:
+    elif seleccion in 'cargos':
         trabajadores_filtrados = [trab for trab in trabajadores if trab["cargo"] == seleccion]
         nombre_archivo = f"planilla_{seleccion.lower()}.csv"
     else:
