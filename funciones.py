@@ -71,7 +71,7 @@ def main():
         if opcion == '1':
             CrearTrabajador()
         elif opcion == '2':
-            ListarTrabajadores()
+            ListaTrabajadores()
         elif opcion == '3':
             ImprimirPlanilla()
         elif opcion == '4':
