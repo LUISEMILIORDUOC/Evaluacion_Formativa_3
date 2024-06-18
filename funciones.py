@@ -13,8 +13,8 @@ def CrearTrabajador():
 
     print("Ingrese el sueldo Bruto");
     sueldoBruto=float(input())
-    descSalud = sueldoBruto * 0.07-sueldoBruto#calculos de descuento de fonasa y afp en este caso modelo
-    descAFP = sueldoBruto * 0.1-sueldoBruto
+    descSalud = sueldoBruto * 0.07 - sueldoBruto #calculos de descuento de fonasa y afp en este caso modelo
+    descAFP = sueldoBruto * 0.1 - sueldoBruto
     sueldoLiquido = sueldoBruto - descSalud - descAFP
    #diccionario de datos del trabajador.
     trabajador = {
@@ -42,7 +42,7 @@ def ImprimirPlanilla():
     if seleccion == 'todos':
         trabajadores_filtrados = trabajadores
         nombre_archivo = "planilla_todos.csv"
-    elif seleccion in cargos:
+    elif seleccion in 'cargos:
         trabajadores_filtrados = [trab for trab in trabajadores if trab["cargo"] == seleccion]
         nombre_archivo = f"planilla_{seleccion.lower()}.csv"
     else:
