@@ -6,9 +6,9 @@ def registrar_trabajador():
     while cargo not in cargo:
         print("Cargo no válido. Los cargos válidos son:", cargo)
         cargo = input("Cargo (CEO, Desarrollador, Analista de datos): ")
-    sueldo_bruto = float(input("Sueldo Bruto: "))
-    desc_salud = sueldo_bruto * 0.07
-    desc_afp = sueldo_bruto * 0.12
+    sueldo_bruto =int(input("Sueldo Bruto: "))
+    desc_fonasa= sueldo_bruto * 0.07
+    desc_afp = sueldo_bruto * 0.1
     liquido_pagar = sueldo_bruto - desc_salud - desc_afp
 #diccionario de plantilla de empleados
     empleado = {
